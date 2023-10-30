@@ -26,11 +26,13 @@ body {
     align-items: center;
     background-color: var(--primary);
     padding: 8px;
+    box-sizing: border-box;
 }
 .navbar .brand {
     color: var(--white);
     font-weight: bolder;
-    font-size: var(--txt-48px);
+    font-size: var(--txt-36px);
+    font-family: sans-serif;
 }
 .menu {
     list-style: none;
@@ -41,6 +43,7 @@ body {
 }
 .menu-item {
     position: relative;
+    padding: 8px;
 }
 .menu-link {
     color: var(--white);
@@ -63,6 +66,8 @@ body {
 }
 .main-content {
     height: calc(100vh - 64px);
-    padding: 24px;
+    padding: 0;
+    margin: 0;
     background-color: var(--green-light);
+    box-sizing: border-box;
 }
