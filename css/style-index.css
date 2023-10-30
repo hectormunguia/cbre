@@ -21,6 +21,7 @@ body {
 }
 .navbar {
     height: 64px;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,24 +43,30 @@ body {
     padding: 0;
 }
 .menu-item {
-    position: relative;
+    position: static;
     padding: 8px;
 }
 .menu-link {
     color: var(--white);
     cursor: pointer;
+    display: block;
     padding: 16px 0;
     text-decoration: none;
+}
+.menu-item:hover .menu-link {
+    text-decoration: underline;
 }
 .dropdown-content {
     display: none;
     position: absolute;
     top: 100%;
-    right: 0;
-    width: 65%;
+    left: 0;
+    width: 100vw;
     background-color: var(--gray);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 24px;
+    z-index: 1;
+    box-sizing: border-box;
 }
 .menu-item:hover .dropdown-content {
     display: block;
