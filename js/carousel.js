@@ -43,9 +43,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Funcionalidad para cambio de color del navbar
     const navbar = document.querySelector('.navbar');
     const logo = document.querySelector('.logo-cbre');
-    const icons = document.querySelectorAll('svg-arrow');
     const menuItems = document.querySelectorAll('.menu-item');
     const menuLinks = document.querySelectorAll('.menu-link');
+    const icons = document.querySelectorAll('.svg-arrow');
 
     menuItems.forEach((item) => {
         item.addEventListener('mouseover', () => {
@@ -55,7 +55,8 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             logo.style.fill = 'var(--primary)';
             icons.forEach((icon) => {
-                icon.style.path.stroke = 'var(--primary)';
+                const path = icon.querySelector('path');
+                path.setAttribute('stroke', 'var(--primary)');
             });
         });
 
@@ -65,6 +66,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 link.style.color = '';
             });
             logo.style.fill = '';
+            icons.forEach((icon) => {
+                const path = icon.querySelector('path');
+                path.setAttribute('stroke', 'var(--white)');
+            });
         });
     })
 });
