@@ -253,7 +253,6 @@ body {
     padding: 24px;
     color: var(--white);
     font-family: serif;
-
     box-sizing: border-box;
 }
 .text-box {
@@ -273,10 +272,16 @@ body {
     overflow: hidden;
     opacity: 0;
     display: none;
+    transition: opacity 0.5s, transform 0.5s;
+    -webkit-transition: opacity 0.5s, transform 0.5s;
+    -moz-transition: opacity 0.5s, transform 0.5s;
+    -ms-transition: opacity 0.5s, transform 0.5s;
+    -o-transition: opacity 0.5s, transform 0.5s;
 }
 .text-box-header { 
     font-size: var(--txt-36px);
     font-weight: bold;
+    margin-bottom: 16px;
     text-align: left;
 }
 .text-box-content {
@@ -288,5 +293,5 @@ body {
 }
 .text-box.active {
     opacity: 1;
-    display: block;
+    display: flex;
 }

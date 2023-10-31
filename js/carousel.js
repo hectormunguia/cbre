@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll('.carousel-button');
     const textBoxes = document.querySelectorAll('.text-box');
     let currentIndex = 0;
+    let textBoxOffset = 0;
     let interval;
 
     function updateCarousel(index) {
@@ -16,6 +17,10 @@ document.addEventListener('DOMContentLoaded', function() {
         images[index].classList.add('active');
         buttons[index].classList.add('active');
         textBoxes[index].classList.add('active');
+
+        // Deplazamiento del textBox
+        textBoxOffset = index * 50;
+        textBoxes[index].style.transform = `translateX(${textBoxOffset}%)`;
 
         // Actualizar el índice actual
         currentIndex = index;
