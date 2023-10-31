@@ -138,6 +138,15 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
+.contact-item {
+    margin: 8px 0;
+    font-size: var(--txt-28px);
+    font-family: serif;
+}
+.contact-item strong {
+    margin-right: 16px;
+    color: var(--primary);
+}
 .menu-item:hover .dropdown-content {
     display: flex;
     opacity: 1;
