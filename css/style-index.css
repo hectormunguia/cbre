@@ -40,6 +40,8 @@ body {
 .menu {
     list-style: none;
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 16x;
     margin: 0;
     padding: 0;
@@ -47,6 +49,11 @@ body {
 .menu-item {
     position: static;
     padding: 8px;
+}
+.svg-arrow {
+    padding-left: 2px;
+    padding-top: 4px;
+    box-sizing: border-box;
 }
 .menu-link {
     color: var(--white);
