@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const images = document.querySelectorAll('.carousel-image');
     const buttons = document.querySelectorAll('.carousel-button');
+    const textBoxes = document.querySelectorAll('.text-box');
     let currentIndex = 0;
     let interval;
 
@@ -9,10 +10,12 @@ document.addEventListener('DOMContentLoaded', function() {
         // Ocultar la imagen actual y desactivar el botón correspondiente
         images[currentIndex].classList.remove('active');
         buttons[currentIndex].classList.remove('active');
+        textBoxes[currentIndex].classList.remove('active');
 
         // Mostrar la imagen seleccionada y activar el botón correspondiente
         images[index].classList.add('active');
         buttons[index].classList.add('active');
+        textBoxes[index].classList.add('active');
 
         // Actualizar el índice actual
         currentIndex = index;
