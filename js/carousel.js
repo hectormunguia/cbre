@@ -40,4 +40,31 @@ document.addEventListener('DOMContentLoaded', function() {
     // Funcion para iniciar carrusel
     startCarousel();
 
+    // Funcionalidad para cambio de color del navbar
+    const navbar = document.querySelector('.navbar');
+    const logo = document.querySelector('.logo-cbre');
+    const icons = document.querySelectorAll('svg-arrow');
+    const menuItems = document.querySelectorAll('.menu-item');
+    const menuLinks = document.querySelectorAll('.menu-link');
+
+    menuItems.forEach((item) => {
+        item.addEventListener('mouseover', () => {
+            navbar.style.background = 'var(--gray)';
+            menuLinks.forEach((link) => {
+                link.style.color = 'var(--primary)';
+            });
+            logo.style.fill = 'var(--primary)';
+            icons.forEach((icon) => {
+                icon.style.path.stroke = 'var(--primary)';
+            });
+        });
+
+        item.addEventListener('mouseout', () => {
+            navbar.style.background = '';
+            menuLinks.forEach((link) => {
+                link.style.color = '';
+            });
+            logo.style.fill = '';
+        });
+    })
 });
