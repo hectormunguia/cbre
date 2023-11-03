@@ -9,13 +9,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function updateCarousel(index) {
         // Ocultar la imagen actual y desactivar el botón correspondiente
-        images[currentIndex].classList.remove('active');
+        //images[currentIndex].classList.remove('active');
+        images[currentIndex].style.opacity = 0;
         buttons[currentIndex].classList.remove('active');
-        textBoxes[currentIndex].classList.remove('active');
+        textBoxes[currentIndex].style.opacity = 0;
+        //textBoxes[currentIndex].classList.remove('active');
 
         // Mostrar la imagen seleccionada y activar el botón correspondiente
+        images[index].style.opacity = 1;
         images[index].classList.add('active');
         buttons[index].classList.add('active');
+        textBoxes[index].style.opacity = 1;
         textBoxes[index].classList.add('active');
 
         // Deplazamiento del textBox

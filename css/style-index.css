@@ -197,16 +197,23 @@ body {
     width: 500%;
     height: 100%;
     display: flex;
-    transition: all 0.4s ease;
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -ms-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
 }
 .carousel-image {
     flex: 0 0 20%;
     opacity: 0;
     display: none;
+    position: absolute;
+    transition: opacity 1s, transform 1s;
+    -webkit-transition: opacity 1s, transform 1s;
+    -moz-transition: opacity 1s, transform 1s;
+    -ms-transition: opacity 1s, transform 1s;
+    -o-transition: opacity 1s, transform 1s;
+    position: absolute;
 }
 .carousel-image.active {
     opacity: 1;
@@ -281,8 +288,7 @@ body {
 .text-box {
     background-color: var(--gray-50);
     backdrop-filter: blur(15px);
-    max-width: 30%;
-    
+    max-width: 20%;
     padding: 24px;
     padding-top: 0;
     display: flex;
@@ -294,11 +300,12 @@ body {
     overflow: hidden;
     opacity: 0;
     display: none;
-    transition: opacity 0.5s, transform 0.5s;
-    -webkit-transition: opacity 0.5s, transform 0.5s;
-    -moz-transition: opacity 0.5s, transform 0.5s;
-    -ms-transition: opacity 0.5s, transform 0.5s;
-    -o-transition: opacity 0.5s, transform 0.5s;
+    transition: opacity 1s, transform 1s;
+    -webkit-transition: opacity 1s, transform 1s;
+    -moz-transition: opacity 1s, transform 1s;
+    -ms-transition: opacity 1s, transform 1s;
+    -o-transition: opacity 1s, transform 1s;
+    position: absolute;
 }
 .text-box-header { 
     font-size: var(--txt-36px);
