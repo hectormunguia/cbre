@@ -12,13 +12,41 @@
     --txt-24px: 24px;
     --txt-20px: 20px;
     --txt-16px: 16px;
+    --txt-14px: 14px;
     --txt-12px: 12px;
+}
+@font-face {
+    font-family: 'calibre-web-bold';
+    src: url('./font/calibre-web-bold.woff2') format('woff2');
+}  
+@font-face {
+    font-family: 'calibre-web-light';
+    src: url('./font/calibre-web-light.woff2') format('woff2');
+} 
+@font-face {
+    font-family: 'calibre-web-light-italic';
+    src: url('./font/calibre-web-light-italic.woff2') format('woff2');
+ }
+@font-face {
+    font-family: 'calibre-web-medium';
+    src: url('./font/calibre-web-medium.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'calibre-web-regular';
+    src: url('./font/calibre-web-regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'calibre-web-regular-italic';
+    src: url('./font/calibre-web-regular-italic.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'calibre-web-semibold';
+    src: url('./font/calibre-web-semibold.woff2') format('woff2');
   }
 body {
     margin: 0;
     padding: 0;
-    font-family: "PT Serif", serif;
-    font-family: "Sunflower", sans-serif;
+    font-family: 'calibre-web-regular', sans-serif;
 }
 .navbar {
     height: 64px;
@@ -32,20 +60,15 @@ body {
     padding-right: 24px;
     box-sizing: border-box;
 }
-.navbar .brand {
-    color: var(--white);
-    font-weight: bolder;
-    font-size: var(--txt-36px);
-    font-family: sans-serif;
-}
 .menu {
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16x;
     margin: 0;
     padding: 0;
+    font-weight: 600;
+    font-size: var(--txt-14px);
 }
 .navbar, .menu-link {
     transition: background-color 0.4s, color 0.4s;
@@ -134,13 +157,13 @@ body {
 }
 .dropdown-tittle {
     font-size: var(--txt-48px);
-    font-family: serif;
+    font-family: sans-serif;
     color: var(--primary);
     margin: 0 0 16px;
 }
 .dropdown-description { 
     font-size: var(--txt-20px);
-    font-family: serif;
+    font-family: sans-serif;
     font-weight: 500;
     margin: 0;
 }
@@ -164,7 +187,7 @@ body {
 .contact-item {
     margin: 8px 0;
     font-size: var(--txt-28px);
-    font-family: serif;
+    font-family: sans-serif;
 }
 .contact-item strong {
     margin-right: 16px;
@@ -282,7 +305,7 @@ body {
     justify-content: flex-start;
     padding: 24px;
     color: var(--white);
-    font-family: serif;
+    font-family: sans-serif;
     box-sizing: border-box;
 }
 .text-box {
