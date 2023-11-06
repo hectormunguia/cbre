@@ -78,6 +78,9 @@ body {
     -ms-transition: background-color 0.4s, color 0.4s;
     -o-transition: background-color 0.4s, color 0.4s;
 }
+.menu.responsive {
+    display: none;
+}
 .menu-item {
     position: static;
     padding: 8px;
