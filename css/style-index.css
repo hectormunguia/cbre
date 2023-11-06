@@ -38,7 +38,7 @@
 }
 @font-face {
     font-family: 'calibre-regular-italic';
-    src: url('../font/Calibre-RegularOtalic.otf') format('opentype');
+    src: url('../font/Calibre-RegularItalic.otf') format('opentype');
 }
 @font-face {
     font-family: 'calibre-semibold';
@@ -178,6 +178,28 @@ body {
 }
 .dropdown-content.language:hover {
     background-color: var(--white);
+}
+.dropdown-content.search {
+    flex-direction: column;
+    height: 20rem;
+    padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+}
+.dropdown-content-input-search {
+    height: 4rem;
+    border: none;
+    outline: none;
+    border-bottom: .0625rem solid var(--primary);
+    background-color: var(--gray);
+    font-family: 'calibre-regular-italic';
+    font-size: var(--txt-36px);
+    font-weight: 100;
+    color: var(--primary)
+}
+.dropdown-content-input-search::placeholder {
+    font-family: 'calibre-regular-italic';
+    font-size: var(--txt-36px);
+    font-weight: 100;
+    color: var(--primary)
 }
 .see-more {
     display: flex;
