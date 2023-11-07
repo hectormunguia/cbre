@@ -18,32 +18,33 @@
 }
 @font-face {
     font-family: 'calibre-bold';
-    src: url('../font/Calibre-Bold.otf') format('opentype');
+    src: url('../font/calibre/Calibre-Bold.otf') format('opentype');
 }  
 @font-face {
     font-family: 'calibre-light';
-    src: url('../font/Calibre-Light.otf') format('opentype');
+    src: url('../font/calibre/Calibre-Light.otf') format('opentype');
 } 
 @font-face {
     font-family: 'calibre-light-italic';
-    src: url('../font/Calibre-LightItalic.otf') format('opentype');
+    src: url('../font/calibre/Calibre-LightItalic.otf') format('opentype');
 }
 @font-face {
     font-family: 'calibre-medium';
-    src: url('../font/Calibre-Medium.otf') format('opentype');
+    src: url('../font/calibre/Calibre-Medium.otf') format('opentype');
 }
 @font-face {
     font-family: 'calibre-regular';
-    src: url('../font/Calibre-Regular.otf') format('opentype');
+    src: url('../font/calibre/Calibre-Regular.otf') format('opentype');
 }
 @font-face {
     font-family: 'calibre-regular-italic';
-    src: url('../font/Calibre-RegularItalic.otf') format('opentype');
+    src: url('../font/calibre/Calibre-RegularItalic.otf') format('opentype');
 }
 @font-face {
     font-family: 'calibre-semibold';
-    src: url('../font/Calibre-Semibold.otf') format('opentype');
-  }
+    src: url('../font/calibre/Calibre-Semibold.otf') format('opentype');
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -168,7 +169,7 @@ body {
 }
 .dropdown-description { 
     font-size: var(--txt-20px);
-    font-family: 'calibre-light';
+    font-family: 'calibre-light-italic';
     font-weight: 500;
     margin: 0;
 }
