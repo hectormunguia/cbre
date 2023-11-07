@@ -44,7 +44,10 @@
     font-family: 'calibre-semibold';
     src: url('../font/calibre/Calibre-Semibold.otf') format('opentype');
 }
-
+@font-face {
+    font-family: 'financier-regular';
+    src: url('../font/financier/FinancierDisplay-Regular.otf') format('opentype');
+}
 body {
     margin: 0;
     padding: 0;
@@ -164,12 +167,13 @@ body {
 }
 .dropdown-tittle {
     font-size: var(--txt-48px);
+    font-family: 'financier-regular';
     color: var(--primary);
     margin: 0 0 16px;
 }
 .dropdown-description { 
     font-size: var(--txt-20px);
-    font-family: 'calibre-light-italic';
+    font-family: 'calibre-light';
     font-weight: 500;
     margin: 0;
 }
