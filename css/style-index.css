@@ -400,9 +400,11 @@ body {
         flex-direction: column;
         justify-content: space-between;
         align-items: start;
+        width: 100%;
     }
     .dropdown-tittle.responsive.services {
         font-size: var(--txt-28px);
+        margin-left: 3rem;
     }
     .menu.responsive.services li {
         width: 100%;
@@ -429,8 +431,9 @@ body {
         margin: 0;
     }
     .img-dropdown-section {
-        height: 2rem;
-        width: 2rem;
+        position: absolute;
+        height: 1.5rem;
+        width: 1.5rem;
         margin: 0 0.5rem 0.5rem;
     }
     .dropdown-description.responsive, .contact-item.responsive {
@@ -450,6 +453,15 @@ body {
     }
     .dropdown-tittle.responsive.services {
         font-size: var(--txt-14px);
+        margin-left: 1.5rem;
+    }
+    .menu.responsive.services li {
+        padding: .2rem;
+    }
+    .img-dropdown-section {
+        height: 0.9rem;
+        width: 0.9rem;
+        margin: 0;
     }
     .dropdown-content.responsive {
         width: 100%;
